@@ -9,7 +9,7 @@ type User {
   followers: [User!]! @relation(name: "FollowRelation")
   posts: [Post!]!
   likes: [Like!]!
-  comments: [Comment]!
+  comments: [Comment!]!
   rooms: [Room!]!
   loginSecret: String!
 }
@@ -21,7 +21,7 @@ type Post {
   user: User!
   files: [File!]!
   likes: [Like!]!
-  Comments: [Comment]!
+  comments: [Comment!]!
 }
 
 type Like {
@@ -52,7 +52,7 @@ type Room {
 type Message {
   id: ID! @id
   text: String!
-  from: User! @relation(name:"From")
+  from: User! @relation(name: "From")
   to: User! @relation(name: "To")
   room: Room!
 }
