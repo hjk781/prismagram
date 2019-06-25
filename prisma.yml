@@ -1,4 +1,4 @@
-endpoint: ${env:PRISMA_ENDPOINT}
+endpoint: https://prismagram-db-317489e624.herokuapp.com/prismagram/prod
 datamodel: datamodel.prisma
 
 generate:
